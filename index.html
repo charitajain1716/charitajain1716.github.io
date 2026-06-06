@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>N Charita Jain Portfolio</title>
+<title>N Charita Jain | Portfolio</title>
 
 <style>
 
@@ -15,15 +15,13 @@ font-family:Arial,sans-serif;
 
 body{
 background:#f5f5f5;
+color:#333;
 }
-
-/* Navigation */
 
 nav{
 background:#2b002b;
 padding:15px;
 text-align:center;
-box-shadow:0 0 20px #ff00aa;
 }
 
 nav a{
@@ -31,14 +29,11 @@ color:white;
 text-decoration:none;
 margin:20px;
 font-weight:bold;
-font-size:18px;
 }
-
-/* Hero Section */
 
 .hero{
 text-align:center;
-padding:80px 50px;
+padding:80px 20px;
 background:linear-gradient(
 135deg,
 #1a001f,
@@ -60,46 +55,26 @@ box-shadow:0 0 25px #ff00aa;
 .hero h1{
 margin-top:20px;
 font-size:48px;
-color:white;
 text-shadow:0 0 20px #ff4dc4;
 }
 
 .hero p{
-font-size:22px;
-color:#f8d9f0;
+font-size:20px;
 margin-top:10px;
 }
 
-/* Button */
-
-.btn{
-display:inline-block;
-background:#ff00aa;
-color:white;
-padding:12px 25px;
-text-decoration:none;
-border-radius:8px;
-margin-top:20px;
-font-weight:bold;
-box-shadow:0 0 20px #ff00aa;
-transition:0.3s;
+.container{
+width:85%;
+margin:auto;
+padding:20px;
 }
-
-.btn:hover{
-background:#ff33bb;
-box-shadow:0 0 35px #ff33bb;
-transform:scale(1.05);
-}
-
-/* Content Sections */
 
 section{
-padding:50px;
-max-width:1000px;
-margin:30px auto;
 background:white;
+padding:25px;
+margin:25px 0;
 border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 h2{
@@ -107,41 +82,53 @@ color:#4b2e83;
 margin-bottom:15px;
 }
 
-/* Project Cards */
+.btn{
+display:inline-block;
+background:#ff00aa;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin-top:10px;
+}
+
+.btn:hover{
+background:#ff33bb;
+}
 
 .card-container{
 display:flex;
-gap:20px;
 flex-wrap:wrap;
+gap:20px;
 justify-content:center;
 }
 
 .card{
-background:white;
 width:300px;
-padding:20px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-text-align:center;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 2px 10px rgba(0,0,0,0.15);
 }
 
 .card img{
 width:100%;
 height:180px;
 object-fit:cover;
-border-radius:10px;
 }
 
-.card h3{
-margin-top:10px;
+.card-content{
+padding:15px;
+text-align:center;
 }
 
 footer{
 background:#2b002b;
 color:white;
 text-align:center;
-padding:20px;
-margin-top:20px;
+padding:15px;
+margin-top:30px;
 }
 
 </style>
@@ -166,21 +153,31 @@ margin-top:20px;
 
 <p>VLSI | Embedded Systems | IoT | PCB Design</p>
 
-<br>
-
-<a class="btn" href="Resume.pdf" download>
-Download Resume
-</a>
-
 </div>
+
+<div class="container">
 
 <section>
 
 <h2>About Me</h2>
 
 <p>
-Final-year Electronics and Communication Engineering student passionate about VLSI, Embedded Systems, IoT, PCB Design and Hardware Development. Skilled in Cadence Virtuoso, KiCad, Arduino, ESP32 and sensor interfacing.
+Final-year Electronics and Communication Engineering student with hands-on experience in VLSI, Embedded Systems, IoT and PCB Design. Skilled in Cadence Virtuoso, KiCad, Arduino, ESP32, sensor interfacing and hardware development.
 </p>
+
+</section>
+
+<section>
+
+<h2>Resume</h2>
+
+<p>
+View my complete resume below.
+</p>
+
+<a class="btn" href="Resume.pdf" target="_blank">
+📄 View Resume
+</a>
 
 </section>
 
@@ -191,33 +188,100 @@ Final-year Electronics and Communication Engineering student passionate about VL
 <div class="card-container">
 
 <div class="card">
+
 <img src="smartcane.jpg">
+
+<div class="card-content">
+
 <h3>Smart Blind Cane</h3>
-<p>IoT-based assistive navigation system.</p>
-<a class="btn" href="smartcane.html">View Project</a>
+
+<p>
+IoT-based assistive navigation system.
+</p>
+
+<a class="btn" href="smartcane.html">
+View Project
+</a>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <img src="voc.jpg">
+
+<div class="card-content">
+
 <h3>VOC Detection</h3>
-<p>Fruit & Vegetable Freshness Monitoring.</p>
-<a class="btn" href="voc.html">View Project</a>
+
+<p>
+Fruit & Vegetable Freshness Monitoring.
+</p>
+
+<a class="btn" href="voc.html">
+View Project
+</a>
+
+</div>
+
 </div>
 
 <div class="card">
+
 <img src="ota.jpg">
+
+<div class="card-content">
+
 <h3>OTA & Gm-C Filter</h3>
-<p>Analog VLSI Design Project.</p>
-<a class="btn" href="ota.html">View Project</a>
+
+<p>
+Analog VLSI Design Project.
+</p>
+
+<a class="btn" href="ota.html">
+View Project
+</a>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
 
+<section>
+
+<h2>Contact</h2>
+
+<p><b>Email:</b> charitajain@gmail.com</p>
+
+<br>
+
+<p>
+<b>LinkedIn:</b>
+<a href="https://www.linkedin.com/in/n-charita-jain-4a23942a0" target="_blank">
+View Profile
+</a>
+</p>
+
+<br>
+
+<p>
+<b>GitHub:</b>
+<a href="https://github.com/charitajain1716" target="_blank">
+View GitHub
+</a>
+</p>
+
+</section>
+
+</div>
+
 <footer>
 
-<p>© 2026 N Charita Jain | Electronics & Communication Engineer</p>
+<p>© 2026 N Charita Jain</p>
 
 </footer>
 
