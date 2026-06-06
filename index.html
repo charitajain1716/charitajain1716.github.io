@@ -1,8 +1,13 @@
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>N Charita Jain | Portfolio</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>N Charita Jain</title>
 
 <style>
 
@@ -10,125 +15,157 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:#f5f5f5;
-color:#333;
-}
-
-nav{
-background:#2b002b;
-padding:15px;
-text-align:center;
-}
-
-nav a{
+background:black;
 color:white;
-text-decoration:none;
-margin:20px;
-font-weight:bold;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(
-135deg,
-#1a001f,
-#4a004a,
-#9c0066
-);
-color:white;
-}
-
-.hero img{
-width:220px;
-height:220px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid #ff00aa;
-box-shadow:0 0 25px #ff00aa;
-}
-
-.hero h1{
-margin-top:20px;
-font-size:48px;
-text-shadow:0 0 20px #ff4dc4;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
+font-family:"Segoe UI",sans-serif;
+min-height:100vh;
 }
 
 .container{
 width:85%;
 margin:auto;
-padding:20px;
 }
 
-section{
-background:white;
-padding:25px;
-margin:25px 0;
-border-radius:12px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+header{
 
-h2{
-color:#4b2e83;
-margin-bottom:15px;
-}
-
-.btn{
-display:inline-block;
-background:#ff00aa;
-color:white;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin-top:10px;
-}
-
-.btn:hover{
-background:#ff33bb;
-}
-
-.card-container{
 display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
+justify-content:space-between;
+align-items:center;
+
+padding-top:50px;
+
 }
 
-.card{
-width:300px;
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 2px 10px rgba(0,0,0,0.15);
+.logo{
+
+font-size:20px;
+font-weight:600;
+letter-spacing:2px;
+
 }
 
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
+nav a{
 
-.card-content{
-padding:15px;
-text-align:center;
-}
-
-footer{
-background:#2b002b;
 color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
+text-decoration:none;
+
+margin-left:40px;
+
+font-size:18px;
+
+transition:0.3s;
+
+}
+
+nav a:hover{
+
+color:#bdbdbd;
+
+}
+
+.hero{
+
+margin-top:120px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+}
+
+.left{
+
+width:55%;
+
+}
+
+.left h1{
+
+font-size:80px;
+
+font-weight:700;
+
+line-height:1.1;
+
+margin-bottom:30px;
+
+}
+
+.left p{
+
+font-size:24px;
+
+line-height:1.8;
+
+color:#d0d0d0;
+
+}
+
+.right{
+
+width:30%;
+
+}
+
+.right img{
+
+width:100%;
+
+border-radius:12px;
+
+}
+
+.links{
+
+margin-top:50px;
+
+}
+
+.links a{
+
+display:inline-block;
+
+color:white;
+
+text-decoration:none;
+
+font-size:22px;
+
+margin-right:40px;
+
+border-bottom:1px solid white;
+
+padding-bottom:5px;
+
+transition:0.3s;
+
+}
+
+.links a:hover{
+
+color:#bdbdbd;
+
+border-color:#bdbdbd;
+
+}
+
+.footer{
+
+position:absolute;
+
+bottom:30px;
+
+left:8%;
+
+color:#777;
+
+font-size:14px;
+
 }
 
 </style>
@@ -137,154 +174,95 @@ margin-top:30px;
 
 <body>
 
+<div class="container">
+
+<header>
+
+<div class="logo">
+
+N CHARITA JAIN
+
+</div>
+
 <nav>
-<a href="index.html">Home</a>
+
 <a href="projects.html">Projects</a>
+
+<a href="Resume.pdf" target="_blank">Resume</a>
+
 <a href="contact.html">Contact</a>
+
 </nav>
+
+</header>
 
 <div class="hero">
 
-<img src="profile.jpg" alt="Profile Photo">
+<div class="left">
 
-<h1>N CHARITA JAIN</h1>
+<h1>
 
-<p>Electronics & Communication Engineer</p>
+Electronics &<br>
+Communication<br>
+Engineer
 
-<p>VLSI | Embedded Systems | IoT | PCB Design</p>
-
-</div>
-
-<div class="container">
-
-<section>
-
-<h2>About Me</h2>
+</h1>
 
 <p>
-Final-year Electronics and Communication Engineering student with hands-on experience in VLSI, Embedded Systems, IoT and PCB Design. Skilled in Cadence Virtuoso, KiCad, Arduino, ESP32, sensor interfacing and hardware development.
+
+Focused on VLSI Design, Embedded Systems,
+IoT Development and PCB Design.
+
+<br><br>
+
+Final-year Electronics and Communication
+Engineering student with hands-on experience
+in Cadence Virtuoso, KiCad, Arduino, ESP32,
+sensor interfacing and hardware development.
+
 </p>
 
-</section>
+<div class="links">
 
-<section>
+<a href="projects.html">
 
-<h2>Resume</h2>
+Projects
 
-<p>
-View my complete resume below.
-</p>
-
-<a class="btn" href="Resume.pdf" target="_blank">
-📄 View Resume
 </a>
 
-</section>
+<a href="Resume.pdf" target="_blank">
 
-<section>
+Resume
 
-<h2>Featured Projects</h2>
+</a>
 
-<div class="card-container">
+<a href="contact.html">
 
-<div class="card">
+Contact
 
-<img src="smartcane.jpg">
-
-<div class="card-content">
-
-<h3>Smart Blind Cane</h3>
-
-<p>
-IoT-based assistive navigation system.
-</p>
-
-<a class="btn" href="smartcane.html">
-View Project
 </a>
 
 </div>
 
 </div>
 
-<div class="card">
+<div class="right">
 
-<img src="voc.jpg">
-
-<div class="card-content">
-
-<h3>VOC Detection</h3>
-
-<p>
-Fruit & Vegetable Freshness Monitoring.
-</p>
-
-<a class="btn" href="voc.html">
-View Project
-</a>
+<img src="profile.jpg">
 
 </div>
 
 </div>
 
-<div class="card">
+<div class="footer">
 
-<img src="ota.jpg">
-
-<div class="card-content">
-
-<h3>OTA & Gm-C Filter</h3>
-
-<p>
-Analog VLSI Design Project.
-</p>
-
-<a class="btn" href="ota.html">
-View Project
-</a>
+© 2026 N Charita Jain
 
 </div>
 
 </div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Contact</h2>
-
-<p><b>Email:</b> charitajain@gmail.com</p>
-
-<br>
-
-<p>
-<b>LinkedIn:</b>
-<a href="https://www.linkedin.com/in/n-charita-jain-4a23942a0" target="_blank">
-View Profile
-</a>
-</p>
-
-<br>
-
-<p>
-<b>GitHub:</b>
-<a href="https://github.com/charitajain1716" target="_blank">
-View GitHub
-</a>
-</p>
-
-</section>
-
-</div>
-
-<footer>
-
-<p>© 2026 N Charita Jain</p>
-
-</footer>
 
 </body>
+
 </html>
 ```
