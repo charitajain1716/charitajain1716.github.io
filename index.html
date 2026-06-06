@@ -1,7 +1,9 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,17 +19,14 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#000;
+background:black;
 color:white;
 font-family:'Segoe UI',sans-serif;
 }
 
-/* Header */
+/* HEADER */
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
 padding:40px 8%;
 }
 
@@ -37,22 +36,10 @@ font-weight:700;
 letter-spacing:2px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:40px;
-font-size:20px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#cfcfcf;
-}
-
-/* Hero Section */
+/* HERO SECTION */
 
 .hero{
-min-height:80vh;
+min-height:85vh;
 padding:0 8%;
 display:flex;
 justify-content:space-between;
@@ -78,7 +65,7 @@ margin-bottom:20px;
 }
 
 .right{
-width:32%;
+width:30%;
 }
 
 .right img{
@@ -86,7 +73,15 @@ width:100%;
 border-radius:12px;
 }
 
-/* Sections */
+/* SCROLL TEXT */
+
+.scroll{
+margin-top:40px;
+font-size:18px;
+color:#888;
+}
+
+/* SECTIONS */
 
 section{
 padding:120px 8%;
@@ -104,11 +99,11 @@ color:#d0d0d0;
 max-width:900px;
 }
 
-/* Resume Button */
+/* BUTTON */
 
 .resume-btn{
 display:inline-block;
-margin-top:40px;
+margin-top:30px;
 padding:15px 35px;
 border:1px solid white;
 color:white;
@@ -122,15 +117,16 @@ background:white;
 color:black;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
-padding:40px 8%;
+padding:50px 8%;
 color:#777;
 font-size:15px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -140,16 +136,6 @@ font-size:15px;
 <div class="logo">
 N CHARITA JAIN
 </div>
-
-<nav>
-
-<a href="#resume">Resume</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
 
 </header>
 
@@ -169,12 +155,12 @@ IoT Development and PCB Design.
 </p>
 
 <p>
-Final-year Electronics and Communication
-Engineering student with hands-on experience
-in Cadence Virtuoso, KiCad, Arduino,
-ESP32, sensor interfacing and hardware
-development.
+Final-year Electronics and Communication Engineering student with hands-on experience in Cadence Virtuoso, KiCad, Arduino, ESP32, sensor interfacing and hardware development.
 </p>
+
+<div class="scroll">
+↓ Scroll to explore
+</div>
 
 </div>
 
@@ -186,8 +172,6 @@ development.
 
 </div>
 
-<!-- Resume Section -->
-
 <section id="resume">
 
 <h2>Resume</h2>
@@ -196,36 +180,36 @@ development.
 View my complete resume and academic profile.
 </p>
 
-<a href="Resume.pdf"
-target="_blank"
-class="resume-btn">
-
+<a href="Resume.pdf" target="_blank" class="resume-btn">
 View Resume
-
 </a>
 
 </section>
-
-<!-- Projects Section -->
 
 <section id="projects">
 
 <h2>Projects</h2>
 
 <p>
-Smart Blind Cane • VOC Detection in Fruits and Vegetables • Inverter-Based OTA & Gm-C Filter • Gas Leakage Detection • Ultrasonic Sound Radar
+• Smart Blind Cane for Visually Impaired People<br><br>
+
+• VOC Detection in Fruits and Vegetables using MQ-3 Sensor and ESP32<br><br>
+
+• Inverter-Based OTA and Gm-C Filter Design using Cadence Virtuoso<br><br>
+
+• Gas Leakage Detection using Arduino Uno<br><br>
+
+• Ultrasonic Sound Radar using Arduino Uno
 </p>
 
 </section>
-
-<!-- Contact Section -->
 
 <section id="contact">
 
 <h2>Contact</h2>
 
 <p>
-Email: charitajain@gmail.com
+Email: yourmail@example.com
 </p>
 
 <br>
@@ -251,5 +235,6 @@ https://github.com/charitajain1716
 </footer>
 
 </body>
+
 </html>
 ```
