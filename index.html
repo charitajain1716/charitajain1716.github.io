@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,6 +51,7 @@ header{
     font-size:72px;
     line-height:1.05;
     margin-bottom:25px;
+    font-weight:700;
 }
 
 .left p{
@@ -110,6 +111,19 @@ section p{
     color:black;
 }
 
+/* Internship */
+
+.internship-role{
+    font-size:32px;
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.internship-duration{
+    color:#a0a0a0;
+    margin-bottom:25px;
+}
+
 /* Projects */
 
 .project-container{
@@ -156,6 +170,10 @@ section p{
 .contact a{
     color:white;
     text-decoration:none;
+}
+
+.contact a:hover{
+    color:#cfcfcf;
 }
 
 /* Footer */
@@ -211,7 +229,7 @@ Final-year Electronics and Communication Engineering student with hands-on exper
 
 </div>
 
-<!-- Resume -->
+<!-- Resume Section -->
 
 <section id="resume">
 
@@ -227,7 +245,32 @@ View Resume
 
 </section>
 
-<!-- Projects -->
+<!-- Internship Section -->
+
+<section id="internship">
+
+<h2>Internship</h2>
+
+<div class="internship-role">
+IoT & Embedded Systems Intern
+</div>
+
+<div class="internship-duration">
+IIMSTC | Feb 2026 – May 2026
+</div>
+
+<p>
+Worked on PCB design using KiCad including schematic design,
+footprint assignment, PCB routing and Gerber generation.
+Performed component selection and datasheet analysis for
+embedded and power electronics circuits.
+Developed Arduino and ESP32 based IoT projects for sensor
+interfacing and real-time monitoring.
+</p>
+
+</section>
+
+<!-- Projects Section -->
 
 <section id="projects">
 
@@ -261,7 +304,7 @@ View Project →
 
 <div class="project-card">
 
-<img src="ota.jpg" alt="OTA">
+<img src="ota.jpg" alt="OTA & Gm-C Filter">
 
 <h3>OTA & Gm-C Filter</h3>
 
@@ -275,7 +318,7 @@ View Project →
 
 </section>
 
-<!-- Contact -->
+<!-- Contact Section -->
 
 <section class="contact">
 
