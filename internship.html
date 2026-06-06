@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +16,7 @@ background:black;
 color:white;
 font-family:'Segoe UI',sans-serif;
 padding:50px;
+margin:0;
 }
 
 .container{
@@ -44,9 +46,9 @@ flex:1;
 }
 
 h2{
-margin-top:20px;
-margin-bottom:15px;
-font-size:32px;
+margin-top:40px;
+margin-bottom:20px;
+font-size:36px;
 }
 
 p{
@@ -60,6 +62,7 @@ display:flex;
 flex-wrap:wrap;
 gap:15px;
 margin-top:20px;
+margin-bottom:40px;
 }
 
 .skill{
@@ -69,13 +72,30 @@ border:1px solid #333;
 border-radius:8px;
 }
 
+.project{
+margin-top:60px;
+}
+
+.project-images{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:25px;
+}
+
+.project-images img{
+width:320px;
+border-radius:10px;
+}
+
 .back{
 display:inline-block;
-margin-top:50px;
+margin-top:60px;
 padding:15px 30px;
 border:1px solid white;
 color:white;
 text-decoration:none;
+transition:0.3s;
 }
 
 .back:hover{
@@ -106,7 +126,7 @@ color:black;
 Completed an internship in IoT and Embedded Systems where I worked on PCB design,
 embedded hardware development and component analysis.
 
-During the internship I gained practical experience in schematic design,
+During the internship, I gained practical experience in schematic design,
 footprint assignment, PCB routing and Gerber file generation using KiCad.
 
 I also worked with Arduino and ESP32 based systems and learned how to analyze
@@ -114,7 +134,7 @@ datasheets, select components and develop hardware solutions for embedded applic
 
 </p>
 
-<h2>Projects & Tasks Performed</h2>
+<h2>Responsibilities</h2>
 
 <p>
 
@@ -136,22 +156,71 @@ datasheets, select components and develop hardware solutions for embedded applic
 <div class="skills">
 
 <div class="skill">KiCad</div>
-
 <div class="skill">PCB Design</div>
-
 <div class="skill">Arduino</div>
-
 <div class="skill">ESP32</div>
-
 <div class="skill">Embedded Systems</div>
-
 <div class="skill">IoT</div>
-
 <div class="skill">Circuit Design</div>
-
 <div class="skill">Hardware Testing</div>
 
 </div>
+
+</div>
+
+</div>
+
+<!-- Projects Section -->
+
+<h1 style="margin-top:80px;">Projects Completed During Internship</h1>
+
+<!-- RC Delay Project -->
+
+<div class="project">
+
+<h2>RC Delayed LED Control Circuit</h2>
+
+<p>
+
+Designed and implemented an RC Delay LED Control Circuit to understand the charging and discharging characteristics of capacitors.
+
+The project demonstrates how a resistor-capacitor network can create a time delay before switching an LED ON or OFF. Different resistor and capacitor values were tested to observe their effect on delay timing and circuit performance.
+
+This project strengthened my understanding of electronic timing circuits, transient response analysis and practical circuit implementation.
+
+</p>
+
+<div class="project-images">
+
+<img src="rc1.jpg" alt="RC Delay Project">
+<img src="rc2.jpg" alt="RC Delay Project">
+<img src="rc3.jpg" alt="RC Delay Project">
+
+</div>
+
+</div>
+
+<!-- Smart Cane Project -->
+
+<div class="project">
+
+<h2>Smart Blind Cane for Visually Impaired People</h2>
+
+<p>
+
+Developed a Smart Blind Cane to improve the safety and mobility of visually impaired individuals.
+
+The system integrates ultrasonic sensors for obstacle detection, IR sensors for path monitoring, water sensors for puddle detection and an accelerometer for fall detection. The device generates alerts through a buzzer and supports emergency notification features using IoT technology.
+
+This project combined sensor interfacing, embedded programming, real-time monitoring and hardware integration to create a practical assistive technology solution.
+
+</p>
+
+<div class="project-images">
+
+<img src="cane1.jpg" alt="Smart Blind Cane">
+<img src="cane2.jpg" alt="Smart Blind Cane">
+<img src="cane3.jpg" alt="Smart Blind Cane">
 
 </div>
 
@@ -164,4 +233,6 @@ datasheets, select components and develop hardware solutions for embedded applic
 </div>
 
 </body>
+
 </html>
+```
