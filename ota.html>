@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OTA and Gm-C Filter</title>
+</head>
+
+<body>
+
+<h1>Inverter Based OTA & Gm-C Filter</h1>
+
+<img src="ota.jpg" width="500">
+
+<h2>Objective</h2>
+
+<p>
+Design and implementation of low power OTA and Gm-C low pass filter using Cadence Virtuoso.
+</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li>Cadence Virtuoso</li>
+<li>180nm CMOS Technology</li>
+<li>Red Hat Linux</li>
+</ul>
+
+<h2>Role</h2>
+
+<p>
+Project Leader.
+</p>
+
+<a href="projects.html">Back</a>
+
+</body>
+</html>
