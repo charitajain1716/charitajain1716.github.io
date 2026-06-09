@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,11 +130,11 @@ Simulation and verification were performed using Cadence tools to analyze gain, 
 
 <div class="project-images">
 
-<img src="ota1.jpg" alt="OTA Image 1">
+<img src="ota1.jpeg" alt="OTA Image 1">
 
-<img src="ota2.jpg" alt="OTA Image 2">
+<img src="ota2.jpeg" alt="OTA Image 2">
 
-<img src="ota3.jpg" alt="OTA Image 3">
+<img src="ota3.jpeg" alt="OTA Image 3">
 
 </div>
 
