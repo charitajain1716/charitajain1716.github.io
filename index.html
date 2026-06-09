@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +21,12 @@ color:#fff;
 font-family:'Segoe UI',sans-serif;
 }
 
-/* Header */
+/* HEADER */
 
 header{
+display:flex;
+justify-content:space-between;
+align-items:center;
 padding:40px 8%;
 }
 
@@ -33,10 +36,22 @@ font-weight:700;
 letter-spacing:2px;
 }
 
-/* Hero Section */
+nav a{
+color:white;
+text-decoration:none;
+margin-left:35px;
+font-size:18px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#bdbdbd;
+}
+
+/* HERO */
 
 .hero{
-min-height:90vh;
+min-height:85vh;
 padding:0 8%;
 display:flex;
 justify-content:space-between;
@@ -48,7 +63,7 @@ width:55%;
 }
 
 .left h1{
-font-size:75px;
+font-size:72px;
 line-height:1.05;
 margin-bottom:25px;
 }
@@ -75,7 +90,7 @@ font-size:18px;
 color:#888;
 }
 
-/* Sections */
+/* SECTION */
 
 section{
 padding:100px 8%;
@@ -92,7 +107,7 @@ line-height:1.8;
 color:#cfcfcf;
 }
 
-/* Resume Button */
+/* BUTTON */
 
 .resume-btn{
 display:inline-block;
@@ -110,7 +125,7 @@ background:white;
 color:black;
 }
 
-/* Cards */
+/* CARDS */
 
 .card-container{
 display:flex;
@@ -120,7 +135,7 @@ margin-top:40px;
 }
 
 .card{
-width:360px;
+width:320px;
 background:#111;
 border-radius:12px;
 overflow:hidden;
@@ -154,10 +169,9 @@ display:block;
 padding:20px;
 color:white;
 text-decoration:none;
-font-size:18px;
 }
 
-/* Contact */
+/* CONTACT */
 
 .contact a{
 color:white;
@@ -168,7 +182,7 @@ text-decoration:none;
 color:#bdbdbd;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
 padding:50px 8%;
@@ -187,9 +201,14 @@ font-size:15px;
 N CHARITA JAIN
 </div>
 
-</header>
+<nav>
+<a href="#resume">Resume</a>
+<a href="#experience">Internship</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<!-- Hero Section -->
+</header>
 
 <div class="hero">
 
@@ -217,16 +236,12 @@ Final-year Electronics and Communication Engineering student with hands-on exper
 </div>
 
 <div class="right">
-
 <img src="profile.jpeg" alt="Profile Photo">
-
 </div>
 
 </div>
 
-<!-- Resume -->
-
-<section>
+<section id="resume">
 
 <h2>Resume</h2>
 
@@ -240,9 +255,7 @@ View Resume
 
 </section>
 
-<!-- Experience -->
-
-<section>
+<section id="experience">
 
 <h2>Experience</h2>
 
@@ -254,9 +267,7 @@ View Resume
 
 <h3>IoT & Embedded Systems Intern</h3>
 
-<p>
-IIMSTC
-</p>
+<p>IIMSTC</p>
 
 <a href="internship.html">
 View Experience →
@@ -268,9 +279,7 @@ View Experience →
 
 </section>
 
-<!-- Projects -->
-
-<section>
+<section id="projects">
 
 <h2>Projects</h2>
 
@@ -278,11 +287,11 @@ View Experience →
 
 <div class="card">
 
-<img src="smartcane.jpg" alt="Smart Blind Cane">
+<img src="ota.jpg" alt="OTA">
 
-<h3>Smart Blind Cane</h3>
+<h3>OTA & Gm-C Filter</h3>
 
-<a href="smartcane.html">
+<a href="ota.html">
 View Project →
 </a>
 
@@ -290,11 +299,35 @@ View Project →
 
 <div class="card">
 
-<img src="rcdelay.jpg" alt="RC Delayed LED Control">
+<img src="gas.jpg" alt="Gas Leakage Detection">
 
-<h3>RC Delayed LED Control</h3>
+<h3>Gas Leakage Detection</h3>
 
-<a href="rcdelay.html">
+<a href="gas.html">
+View Project →
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="radar.jpg" alt="Ultrasonic Radar">
+
+<h3>Ultrasonic Sound Radar</h3>
+
+<a href="radar.html">
+View Project →
+</a>
+
+</div>
+
+<div class="card">
+
+<img src="voc.jpg" alt="VOC Detection">
+
+<h3>VOC Detection</h3>
+
+<a href="voc.html">
 View Project →
 </a>
 
@@ -304,15 +337,11 @@ View Project →
 
 </section>
 
-<!-- Contact -->
-
-<section class="contact">
+<section id="contact" class="contact">
 
 <h2>Contact</h2>
 
-<p>
-Email: charitajain@gmail.com
-</p>
+<p>Email: charitajain@gmail.com</p>
 
 <br>
 
